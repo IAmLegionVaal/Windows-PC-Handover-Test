@@ -2,7 +2,16 @@
 
 > **Testing note:** This was tested by me to be working. User experience may vary.
 
+## One-click use
+
+1. Download and extract the repository.
+2. Double-click `Run-OneClick.bat`.
+3. The tool runs the full handover assessment directly—there is no menu and it does not change Windows settings.
+4. Review the exit code and open `C:\Users\Public\Documents\WindowsPCHandoverReports`.
+
 Included: `Test-WindowsPCHandover.ps1`
+
+## PowerShell usage
 
 ```powershell
 .\Test-WindowsPCHandover.ps1
@@ -10,8 +19,6 @@ Included: `Test-WindowsPCHandover.ps1`
 ```
 
 Creates CSV, JSON and HTML checks for Windows, hardware, storage, devices, protection, network, activation and updates.
-
-Reports: `C:\Users\Public\Documents\WindowsPCHandoverReports`
 
 Exit codes: `0` passed, `1` fatal error, `2` warnings or failed checks.
 
